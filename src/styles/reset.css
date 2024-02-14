@@ -1,4 +1,3 @@
-
 /* 
 ---------------------------------------------
 reset
@@ -53,6 +52,8 @@ html, body {
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x:hidden;
+  height:100%;
 }
 
 a {
@@ -61,24 +62,36 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0px;
-  margin-bottom: 0px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
 }
 
 ul {
   margin-bottom: 0px;
 }
 
+p {
+  font-size: 14px;
+  line-height: 28px;
+  color: inherit;
+}
 
 img {
-  width: 100%;
-  overflow: hidden;
+  max-width: 100%;
+  height: auto;
 }
 
-button {
-  background-color: transparent;
-  outline: none;
+button,
+textarea {
   outline-color: transparent;
-  border: none;
-  padding: 0;
+  border:none;
+  background-color: inherit;
+  outline: none;
+  cursor: pointer;
 }
+textarea {
+    resize: none;
+  }
+ 
